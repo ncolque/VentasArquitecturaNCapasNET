@@ -5,6 +5,9 @@
       "CapaDatos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CapaEntidades": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CapaDatos.dll": {}
         },
@@ -12,11 +15,22 @@
           "bin/placeholder/CapaDatos.dll": {}
         }
       },
+      "CapaEntidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CapaEntidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaEntidades.dll": {}
+        }
+      },
       "CapaNegocio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "CapaDatos": "1.0.0"
+          "CapaDatos": "1.0.0",
+          "CapaEntidades": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CapaNegocio.dll": {}
@@ -33,6 +47,11 @@
       "path": "../CapaDatos/CapaDatos.csproj",
       "msbuildProject": "../CapaDatos/CapaDatos.csproj"
     },
+    "CapaEntidades/1.0.0": {
+      "type": "project",
+      "path": "../CapaEntidades/CapaEntidades.csproj",
+      "msbuildProject": "../CapaEntidades/CapaEntidades.csproj"
+    },
     "CapaNegocio/1.0.0": {
       "type": "project",
       "path": "../CapaNegocio/CapaNegocio.csproj",
@@ -41,6 +60,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CapaEntidades >= 1.0.0",
       "CapaNegocio >= 1.0.0"
     ]
   },
@@ -71,6 +91,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaEntidades\\CapaEntidades.csproj": {
+              "projectPath": "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaEntidades\\CapaEntidades.csproj"
+            },
             "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaNegocio\\CapaNegocio.csproj": {
               "projectPath": "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaNegocio\\CapaNegocio.csproj"
             }

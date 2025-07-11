@@ -5,11 +5,24 @@
       "CapaDatos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CapaEntidades": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CapaDatos.dll": {}
         },
         "runtime": {
           "bin/placeholder/CapaDatos.dll": {}
+        }
+      },
+      "CapaEntidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CapaEntidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaEntidades.dll": {}
         }
       }
     }
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../CapaDatos/CapaDatos.csproj",
       "msbuildProject": "../CapaDatos/CapaDatos.csproj"
+    },
+    "CapaEntidades/1.0.0": {
+      "type": "project",
+      "path": "../CapaEntidades/CapaEntidades.csproj",
+      "msbuildProject": "../CapaEntidades/CapaEntidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CapaDatos >= 1.0.0"
+      "CapaDatos >= 1.0.0",
+      "CapaEntidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +74,9 @@
           "projectReferences": {
             "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaDatos\\CapaDatos.csproj": {
               "projectPath": "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaDatos\\CapaDatos.csproj"
+            },
+            "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaEntidades\\CapaEntidades.csproj": {
+              "projectPath": "D:\\projects\\net\\VentasArquitecturaNCapasNET\\CapaEntidades\\CapaEntidades.csproj"
             }
           }
         }
