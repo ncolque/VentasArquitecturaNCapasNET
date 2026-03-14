@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CapaNegocio;
-//RESPONSABILIDAD: Presentar opciones al usuario y mostrar el resultado correspondiente
+//RESPONSABILIDAD: Presentar opciones al usuario y mostrar el resultado correspondiente, entrega y solicita informacion al usuario.
+
+//EJEMPLOS: Una aplicacion web, una interfaz por consola, una aplicacion de escritorio, una aplicacion movil, un servicio web, un API.
 
 //CAPA 1 - Esto es un Proyecto de Consola - Ejecutable
 //Agregar referencia de proyecto con la Capa de Negocio
